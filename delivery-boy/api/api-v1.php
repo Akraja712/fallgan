@@ -46,19 +46,19 @@ APIs for Delivery Boys
 
 */
 
-if (!verify_token()) {
+/*if (!verify_token()) {
     return false;
-}
+}*/
 
 $currency = $fn->get_settings('currency');
 
-if (!isset($_POST['accesskey'])  || trim($_POST['accesskey']) != $access_key) {
+/*if (!isset($_POST['accesskey'])  || trim($_POST['accesskey']) != $access_key) {
     $response['error'] = true;
     $response['message'] = "No Accsess key found!";
     print_r(json_encode($response));
     return false;
     exit();
-}
+}*/
 
 if (isset($_POST['login'])) {
     /* 
